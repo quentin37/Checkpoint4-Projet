@@ -76,7 +76,7 @@
   .navbar_burger {
     z-index: 3;
     display: block;
-    position: fixed;
+    position: absolute;
     width: 20px;
     height: 20px;
     top: 2.3rem;
