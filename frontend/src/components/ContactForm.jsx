@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
@@ -9,6 +11,8 @@ export default function ContactForm() {
    * {...register("Nom-de-variable", { required: true })} dans les input ligne 85/97/108/120
    * { required: true } Permet d'obliger l'utilisateur à rentrer une valeur dans l'input
    */
+  const [submitted, setSubmitted] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -19,10 +23,11 @@ export default function ContactForm() {
   const onSubmit = (data) => {
     axios
       .post(`${import.meta.env.VITE_BACKEND_URL}/sendEmail`, data)
-      .then((res) => {
-        console.warn("mail was send", res);
+      .then(() => {
+        console.warn("mail was send");
       })
       .catch((err) => console.error(err));
+    setSubmitted(true);
     reset();
   };
 
@@ -92,6 +97,11 @@ export default function ContactForm() {
           </button>
         </div>
       </form>
+      {submitted && (
+        <div className="confirmation_message">
+          <h3>L'email est envoyé</h3>
+        </div>
+      )}
     </section>
   );
 }
