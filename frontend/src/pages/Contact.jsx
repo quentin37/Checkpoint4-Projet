@@ -4,9 +4,9 @@ import ContactForm from "../components/ContactForm";
 
 function Contact() {
   return (
-    <div>
+    <section>
       <ContactForm />
-    </div>
+    </section>
   );
 }
 
