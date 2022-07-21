@@ -26,6 +26,13 @@ class AllProjectManager extends AbstractManager {
       ]
     );
   }
+
+  update(editProject) {
+    return this.connection.query(
+      `update ${AllProjectManager.table} set ? where id = ?`,
+      [editProject, editProject.id]
+    );
+  }
 }
 
 module.exports = AllProjectManager;

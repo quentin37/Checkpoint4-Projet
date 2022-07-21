@@ -52,7 +52,7 @@ export default function EditProject() {
               className="post_input"
               type="text"
               name="titreInput"
-              {...register("title", { required: true })}
+              {...register("title", { required: false })}
             />
             {/* Si le champ n'est pas rempli, on indique à l'utilisateur que ce champ est requis. */}
             {errors.title?.type === "required" && (
@@ -66,7 +66,7 @@ export default function EditProject() {
               <textarea
                 className="contact_textaera_qb"
                 name="descriptionInput"
-                {...register("description", { required: true })}
+                {...register("description", { required: false })}
               />
               {errors.description?.type === "required" && (
                 <p className="contact_required_qb">
@@ -81,7 +81,7 @@ export default function EditProject() {
               className="post_input"
               type="text"
               name="imageInput"
-              {...register("image", { required: true })}
+              {...register("image", { required: false })}
             />
             {errors.image?.type === "required" && (
               <p className="contact_required_qb">
@@ -95,7 +95,7 @@ export default function EditProject() {
               className="post_input"
               type="text"
               name="repot"
-              {...register("repot", { required: true })}
+              {...register("repot", { required: false })}
             />
             {errors.repot?.type === "required" && (
               <p className="contact_required_qb">
@@ -110,7 +110,7 @@ export default function EditProject() {
               placeholder="ex : 2022-06-22"
               type="text"
               name="datelInput"
-              {...register("date", { required: true })}
+              {...register("date", { required: false })}
             />
             {errors.date?.type === "required" && (
               <p className="contact_required_qb">
