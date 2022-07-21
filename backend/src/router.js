@@ -15,6 +15,7 @@ router.post("/items", ItemController.add);
 router.delete("/items/:id", ItemController.delete);
 
 router.post("/sendEmail", MailController.sendMail);
+router.post("/postProject", AllProjectController.add);
 router.get("/allProject", AllProjectController.browse);
 router.get("/project/:id", AllProjectController.read);
 

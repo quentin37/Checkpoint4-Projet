@@ -28,6 +28,22 @@ class AllProjectController {
         res.sendStatus(500);
       });
   };
+
+  static add = (req, res) => {
+    const newProject = req.body;
+
+    // TODO validations (length, format...)
+
+    models.project
+      .insert(newProject)
+      .then(([result]) => {
+        res.status(201).send({ ...newProject, id: result.insertId });
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  };
 }
 
 module.exports = AllProjectController;
