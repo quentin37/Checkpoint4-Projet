@@ -15,6 +15,18 @@ DROP TABLE IF EXISTS `portfolio`.`project`;
 
 
 -- -----------------------------------------------------
+-- Table `portfolio`.`profil`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `portfolio`.`profil` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `image` VARCHAR(255) NULL,
+  `name` VARCHAR(45) NULL,
+  `description` TEXT NULL,
+    `objectif` TEXT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+-- -----------------------------------------------------
 -- Table `portfolio`.`category`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `portfolio`.`category` (
