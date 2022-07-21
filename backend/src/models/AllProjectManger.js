@@ -12,6 +12,20 @@ class AllProjectManager extends AbstractManager {
   findAll() {
     return this.connection.query(`select * from  ${this.table}`);
   }
+
+  insert(NewProject) {
+    return this.connection.query(
+      `insert into ${AllProjectManager.table}  (title, description, image, repot, date, category_id) values (?,?,?,?,?,?)`,
+      [
+        NewProject.title,
+        NewProject.description,
+        NewProject.image,
+        NewProject.repot,
+        NewProject.date,
+        NewProject.category_id,
+      ]
+    );
+  }
 }
 
 module.exports = AllProjectManager;

@@ -25,7 +25,7 @@ function ViewProject() {
         <p className="describeProject">{projects.description}</p>
         <img className="img-responsive" src={projects.image} alt="" />
         <p className="describeProject">
-          Ce projet a etait realisé a partir du {projects.date}
+          Ce projet a etait realisé a partir du {projects.date?.split("T")[0]}.
         </p>
         <p className="describeProject">
           Vous pouvez retrouver le code sur github : <br />{" "}
