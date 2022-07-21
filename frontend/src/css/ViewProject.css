@@ -23,4 +23,12 @@
         width: 1200px;
         height: 600px;
     }
+    .singleProjet{
+        width: 1200px;
+        height: 55rem;
+    }
+    .centerProject{
+        display: flex;
+        justify-content: center;
+    }
 }

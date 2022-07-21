@@ -19,7 +19,7 @@ function ViewProject() {
   }, []);
 
   return (
-    <div>
+    <div className="centerProject">
       <div className="singleProjet">
         <h3>{projects.title}</h3>
         <p className="describeProject">{projects.description}</p>
