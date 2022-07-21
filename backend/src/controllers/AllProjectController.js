@@ -64,6 +64,18 @@ class AllProjectController {
         res.sendStatus(500);
       });
   };
+
+  static delete = (req, res) => {
+    models.project
+      .delete(req.params.id)
+      .then(() => {
+        res.sendStatus(204);
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  };
 }
 
 module.exports = AllProjectController;

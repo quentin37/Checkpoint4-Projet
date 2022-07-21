@@ -22,7 +22,7 @@ export default function EditProject() {
 
   const onSubmit = (data) => {
     axios
-      .put(`${import.meta.env.VITE_BACKEND_URL}/postProject`, data)
+      .put(`${import.meta.env.VITE_BACKEND_URL}/Project`, data)
       .then(() => {})
       .catch((err) => console.error(err));
     setSubmitted(true);
