@@ -8,7 +8,7 @@ function ProjectCards() {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_BACKEND_URL}/allProject `)
+      .get(`${import.meta.env.VITE_BACKEND_URL}/Project `)
       .then((res) => {
         setProjects(res.data);
       })

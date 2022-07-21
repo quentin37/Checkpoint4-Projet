@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteProject from "../components/DeleteProject";
 import EditProject from "../components/EditProject";
 import PostProject from "../components/PostProject";
 
@@ -7,6 +8,7 @@ function OptionsProject() {
     <section className="all_options">
       <PostProject />
       <EditProject />
+      <DeleteProject />
     </section>
   );
 }

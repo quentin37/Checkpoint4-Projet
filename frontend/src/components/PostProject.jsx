@@ -22,7 +22,7 @@ export default function PostProject() {
 
   const onSubmit = (data) => {
     axios
-      .post(`${import.meta.env.VITE_BACKEND_URL}/postProject`, data)
+      .post(`${import.meta.env.VITE_BACKEND_URL}/Project`, data)
       .then(() => {
         console.warn("Projet was send");
       })

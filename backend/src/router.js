@@ -15,9 +15,10 @@ router.post("/items", ItemController.add);
 router.delete("/items/:id", ItemController.delete);
 
 router.post("/sendEmail", MailController.sendMail);
-router.post("/postProject", AllProjectController.add);
-router.put("/postProject", AllProjectController.edit);
-router.get("/allProject", AllProjectController.browse);
+router.post("/Project", AllProjectController.add);
+router.put("/Project", AllProjectController.edit);
+router.delete("/Project/:id", AllProjectController.delete);
+router.get("/Project", AllProjectController.browse);
 router.get("/project/:id", AllProjectController.read);
 
 module.exports = router;
