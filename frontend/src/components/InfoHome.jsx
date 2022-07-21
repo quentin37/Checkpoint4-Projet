@@ -21,7 +21,7 @@ function InfoHome() {
       </div>
       <div className="contact">
         <h3>Vous voulez me contacter ? </h3>
-        <p className="description">
+        <p className="description1">
           Vous avez une question ? <br />
           Vous etes interesse par mon profil ? <br />
           je repondrai a toute vos question.

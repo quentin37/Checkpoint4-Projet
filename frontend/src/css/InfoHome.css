@@ -1,5 +1,6 @@
 .infoHome{
     display: flex;
+    height: 13rem;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -10,7 +11,6 @@
     flex-direction: column;
     margin-top: 2rem;
     border-bottom: solid 2px black;
-    height: 15rem;
 }
 
 .contact{
@@ -38,6 +38,12 @@
     padding: 0.5rem;
 }
 
+.description1{
+    margin: 0;
+    text-align: center;
+    padding: 0.5rem;
+}
+
 @media screen and (min-width: 768px){
     .infoHome{
         display: flex;
@@ -50,12 +56,15 @@
         flex-direction: column;
         border-bottom: none;
         margin-top: 1rem;
-        height: 18rem;
+        height: 12rem;
     }
     .contact{
         width: 50%;
         margin-top: 1rem;
         height: 13rem;
+    }
+    .description{
+        padding: 0px 32px 10px ;
     }
 }
 
