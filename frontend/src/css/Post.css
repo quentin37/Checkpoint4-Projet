@@ -1,0 +1,43 @@
+.all_options{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.field_label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.post_input{
+    width: 20rem;
+    border-radius: 8px;
+    height: 1.5rem;
+  }
+
+.post_button{
+    display: flex;
+    justify-content: center;
+}
+
+.post_title{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .all_options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .all_options{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

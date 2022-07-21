@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 
-import "../css/ContactForm.css";
+import "../css/Post.css";
 
 export default function PostProject() {
   /**
@@ -24,7 +24,7 @@ export default function PostProject() {
     axios
       .post(`${import.meta.env.VITE_BACKEND_URL}/postProject`, data)
       .then(() => {
-        console.warn("mail was send");
+        console.warn("Projet was send");
       })
       .catch((err) => console.error(err));
     setSubmitted(true);
@@ -33,13 +33,13 @@ export default function PostProject() {
 
   return (
     <section>
-      <h1>Créer un nouveau projet :</h1>
+      <h1 className="post_title">Créer un nouveau projet :</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label className="field_label_qb" htmlFor="titreInput">
+          <label className="field_label" htmlFor="titreInput">
             Titre du projet
             <input
-              className="field_input"
+              className="post_input"
               type="text"
               name="titreInput"
               {...register("title", { required: true })}
@@ -50,7 +50,7 @@ export default function PostProject() {
                 ⚠️ Le titre est obligatoire !
               </p>
             )}
-            <label className="field_label_qb" htmlFor="descriptionInput">
+            <label className="field_label" htmlFor="descriptionInput">
               Description
               <br />
               <textarea
@@ -65,10 +65,10 @@ export default function PostProject() {
               )}
             </label>
           </label>
-          <label className="field_label_qb" htmlFor="imageInput">
+          <label className="field_label" htmlFor="imageInput">
             Image du projet (URL)
             <input
-              className="field_input"
+              className="post_input"
               type="text"
               name="imageInput"
               {...register("image", { required: true })}
@@ -79,10 +79,10 @@ export default function PostProject() {
               </p>
             )}
           </label>
-          <label className="field_label_qb" htmlFor="repotlInput">
+          <label className="field_label" htmlFor="repotlInput">
             Repot du projet (URL)
             <input
-              className="field_input"
+              className="post_input"
               type="text"
               name="repot"
               {...register("repot", { required: true })}
@@ -93,10 +93,10 @@ export default function PostProject() {
               </p>
             )}
           </label>
-          <label className="field_label_qb" htmlFor="datelInput">
+          <label className="field_label" htmlFor="datelInput">
             Date du projet
             <input
-              className="field_input"
+              className="post_input"
               placeholder="ex : 2022-06-22"
               type="text"
               name="datelInput"
@@ -108,10 +108,10 @@ export default function PostProject() {
               </p>
             )}
           </label>
-          <label className="field_label_qb" htmlFor="categorylInput">
+          <label className="field_label" htmlFor="categorylInput">
             categorie du projet (id)
             <input
-              className="field_input"
+              className="post_input"
               placeholder="1=perso, 2=pro, 3=ecole"
               type="text"
               name="category"
@@ -123,9 +123,11 @@ export default function PostProject() {
               </p>
             )}
           </label>
-          <button type="submit" value="send" className="button_form">
-            Envoyer
-          </button>
+          <div className="post_button">
+            <button type="submit" value="send" className="button_form">
+              Envoyer
+            </button>
+          </div>
         </div>
       </form>
       {submitted && (

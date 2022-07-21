@@ -3,7 +3,7 @@ import PostProject from "../components/PostProject";
 
 function OptionsProject() {
   return (
-    <section>
+    <section className="all_options">
       <PostProject />
     </section>
   );
