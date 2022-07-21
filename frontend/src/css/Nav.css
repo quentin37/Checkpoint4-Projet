@@ -5,10 +5,7 @@
 
 .nav_logo {
   height: 100px;
-  color: var(--light);
-  align-items: center;
   cursor: pointer;
-  font-size: 2rem;
   flex-grow: 1;
 }
 .navbar {
@@ -17,8 +14,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem;
-  position: fixed;
   width: 100%;
   min-height: 75px;
   background-color: var(--dark);
@@ -65,7 +60,6 @@
     align-items: center;
     cursor: pointer;
     flex-grow: 1;
-    margin-left: -0.1rem;
   }
   .navbar_links {
     flex-direction: column;
@@ -80,15 +74,17 @@
     visibility: hidden;
   }
   .navbar_burger {
+    z-index: 3;
     display: block;
-    position: fixed;
+    position: absolute;
     width: 20px;
     height: 20px;
-    top: 3rem;
+    top: 2.3rem;
     right: 3rem;
   }
 
   .show_nav .navbar_links {
+    z-index: 3;
     display: flex;
     justify-content: center;
     text-align: center;

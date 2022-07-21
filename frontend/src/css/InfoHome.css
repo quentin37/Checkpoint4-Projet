@@ -1,0 +1,76 @@
+.infoHome{
+    display: flex;
+    height: 13rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutMe{
+    display:flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    border-bottom: solid 2px black;
+}
+
+.contact{
+    display:flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 13rem;
+}
+
+.enSavoirPlus{
+    border: none;
+    width: 7rem;
+    height: 1.2rem;
+    border-radius: 0.5rem;
+    font-size: small;
+    background-color: #1260C4;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.description{
+    margin: 0;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.description1{
+    margin: 0;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+    .infoHome{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .aboutMe{
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        border-bottom: none;
+        margin-top: 1rem;
+        height: 12rem;
+    }
+    .contact{
+        width: 50%;
+        margin-top: 1rem;
+        height: 13rem;
+    }
+    .description{
+        padding: 0px 32px 10px ;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .carousel{
+        height: 600px;
+    }
+}

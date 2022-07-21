@@ -4,7 +4,6 @@
 }
 
 .contact_form_qb {
-  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -93,11 +92,7 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .form_message_qb{
-    margin-top: 10rem;
-  }
   .contact_form_qb {
-    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     text-align: center;
