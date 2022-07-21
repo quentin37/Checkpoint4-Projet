@@ -19,17 +19,23 @@ DROP TABLE IF EXISTS `portfolio`.`project`;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `portfolio`.`category` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `category` VARCHAR(45) NULL,
+  `category` VARCHAR(255) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
-
+INSERT INTO
+`category` (`category`)
+VALUES
+('Projet personel'),
+('Projet professionnel'),
+('Projet ecole')
+;
 -- -----------------------------------------------------
 -- Table `portfolio`.`project`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `portfolio`.`project` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `title` VARCHAR(45) NULL,
+  `title` VARCHAR(255) NULL,
   `description` TEXT NULL,
   `image` VARCHAR(255) NULL,
   `repot` VARCHAR(255) NULL,
@@ -43,7 +49,10 @@ CREATE TABLE IF NOT EXISTS `portfolio`.`project` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
+INSERT INTO `portfolio`.`project` (`title`,`description`,`image`,`repot`,`date`,`category_id`)
+VALUES
+('Projet 2 earthKeeper','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.','https://i.ibb.co/FsWHpb4/earthkeeper.png','https://github.com/WildCodeSchool/2022-03-RemoteJS-Erreur404-miditrente','2022-05-09',3)
+;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

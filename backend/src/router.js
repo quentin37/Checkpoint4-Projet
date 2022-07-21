@@ -1,6 +1,10 @@
 const express = require("express");
 
-const { ItemController, MailController } = require("./controllers");
+const {
+  ItemController,
+  MailController,
+  AllProjectController,
+} = require("./controllers");
 
 const router = express.Router();
 
@@ -11,5 +15,7 @@ router.post("/items", ItemController.add);
 router.delete("/items/:id", ItemController.delete);
 
 router.post("/sendEmail", MailController.sendMail);
+router.get("/allProject", AllProjectController.browse);
+router.get("/project/:id", AllProjectController.read);
 
 module.exports = router;
