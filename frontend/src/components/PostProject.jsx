@@ -36,75 +36,90 @@ export default function PostProject() {
       <h1>Créer un nouveau projet :</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label className="field_label_qb" htmlFor="nameInput">
+          <label className="field_label_qb" htmlFor="titreInput">
             Titre du projet
             <input
               className="field_input"
               type="text"
-              name="nameInput"
+              name="titreInput"
               {...register("title", { required: true })}
             />
             {/* Si le champ n'est pas rempli, on indique à l'utilisateur que ce champ est requis. */}
-            {errors.Name?.type === "required" && (
+            {errors.title?.type === "required" && (
               <p className="contact_required_qb">
                 ⚠️ Le titre est obligatoire !
               </p>
             )}
-            <label className="field_label_qb" htmlFor="messageInput">
+            <label className="field_label_qb" htmlFor="descriptionInput">
               Description
               <br />
               <textarea
                 className="contact_textaera_qb"
-                name="messageInput"
+                name="descriptionInput"
                 {...register("description", { required: true })}
               />
-              {errors.Message?.type === "required" && (
+              {errors.description?.type === "required" && (
                 <p className="contact_required_qb">
                   ⚠️ La description est obligatoire !
                 </p>
               )}
             </label>
           </label>
-          <label className="field_label_qb" htmlFor="emailInput">
+          <label className="field_label_qb" htmlFor="imageInput">
             Image du projet (URL)
             <input
               className="field_input"
               type="text"
-              name="emailInput"
+              name="imageInput"
               {...register("image", { required: true })}
             />
-            {errors.Email?.type === "required" && (
+            {errors.image?.type === "required" && (
               <p className="contact_required_qb">
                 ⚠️ L'image est obligatoire !
               </p>
             )}
           </label>
-          <label className="field_label_qb" htmlFor="sujetlInput">
-            Repot du projet
+          <label className="field_label_qb" htmlFor="repotlInput">
+            Repot du projet (URL)
             <input
               className="field_input"
               type="text"
-              name="sujetlInput"
-              {...register("Sujet", { required: true })}
+              name="repot"
+              {...register("repot", { required: true })}
             />
-            {errors.Sujet?.type === "required" && (
+            {errors.repot?.type === "required" && (
               <p className="contact_required_qb">
-                ⚠️ Le sujet est obligatoire !
+                ⚠️ Le repot est obligatoire !
               </p>
             )}
           </label>
-          <label className="field_label_qb" htmlFor="sujetlInput">
+          <label className="field_label_qb" htmlFor="datelInput">
             Date du projet
             <input
               className="field_input"
               placeholder="ex : 2022-06-22"
               type="text"
-              name="sujetlInput"
-              {...register("Sujet", { required: true })}
+              name="datelInput"
+              {...register("date", { required: true })}
             />
-            {errors.Sujet?.type === "required" && (
+            {errors.date?.type === "required" && (
               <p className="contact_required_qb">
-                ⚠️ Le sujet est obligatoire !
+                ⚠️ La date est obligatoire !
+              </p>
+            )}
+          </label>
+          <label className="field_label_qb" htmlFor="categorylInput">
+            categorie du projet (id)
+            <input
+              className="field_input"
+              placeholder="1=perso, 2=pro, 3=ecole"
+              type="text"
+              name="category"
+              {...register("category_id", { required: true })}
+            />
+            {errors.category_id?.type === "required" && (
+              <p className="contact_required_qb">
+                ⚠️ La categorie est obligatoire !
               </p>
             )}
           </label>
