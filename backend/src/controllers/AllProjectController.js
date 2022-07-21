@@ -44,6 +44,26 @@ class AllProjectController {
         res.sendStatus(500);
       });
   };
+
+  static edit = (req, res) => {
+    const editProject = req.body;
+
+    // TODO validations (length, format...)
+
+    models.project
+      .update(editProject)
+      .then(([result]) => {
+        if (result.affectedRows === 0) {
+          res.sendStatus(404);
+        } else {
+          res.sendStatus(204);
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  };
 }
 
 module.exports = AllProjectController;
