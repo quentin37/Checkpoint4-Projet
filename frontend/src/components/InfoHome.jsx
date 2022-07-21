@@ -14,17 +14,22 @@ function InfoHome() {
           trouverez tout mes projet dans se site.
         </p>
         <Link to="/about_Me">
-          <p className="enSavoirPlus">En savoir plus</p>
+          <button type="button" className="enSavoirPlus">
+            En savoir plus
+          </button>
         </Link>
       </div>
       <div className="contact">
         <h3>Vous voulez me contacter ? </h3>
         <p className="description">
-          Vous avez une question ? Vous etes interesse par mon profil ? je
-          repondrai a toute vos question.
+          Vous avez une question ? <br />
+          Vous etes interesse par mon profil ? <br />
+          je repondrai a toute vos question.
         </p>
-        <Link to="/Contact">
-          <p className="enSavoirPlus">En savoir plus</p>
+        <Link to="/about_Me">
+          <button type="button" className="enSavoirPlus">
+            En savoir plus
+          </button>
         </Link>
       </div>
     </div>

@@ -21,6 +21,7 @@
 }
 
 .enSavoirPlus{
+    border: none;
     width: 7rem;
     height: 1.2rem;
     border-radius: 0.5rem;
