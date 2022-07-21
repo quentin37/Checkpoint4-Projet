@@ -1,0 +1,19 @@
+.allProject{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cardProject{
+    height: 16rem;
+    width: 98%;
+    text-align: center;
+    background-color: #dddddd;
+    border-radius: 1rem;
+}
+
+.describe{
+    text-align: left;
+    padding: 0px 20px 10px ;
+}

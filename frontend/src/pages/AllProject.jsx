@@ -1,9 +1,9 @@
-import React from "react";
+import ProjectCards from "../components/ProjectCards";
 
 function AllProject() {
   return (
     <section>
-      <h1>project cards</h1>
+      <ProjectCards />
     </section>
   );
 }
