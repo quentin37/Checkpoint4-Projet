@@ -16,7 +16,6 @@ function ProjectCards() {
         console.error(err);
       });
   }, []);
-
   return (
     <div className="allProject">
       {projects.map((project) => (

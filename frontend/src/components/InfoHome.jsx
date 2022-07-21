@@ -26,7 +26,7 @@ function InfoHome() {
           Vous etes interesse par mon profil ? <br />
           je repondrai a toute vos question.
         </p>
-        <Link to="/about_Me">
+        <Link to="/Contact">
           <button type="button" className="enSavoirPlus">
             En savoir plus
           </button>

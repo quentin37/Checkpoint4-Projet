@@ -1,0 +1,26 @@
+.singleProjet{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.describeProject{
+    text-align: left;
+}
+
+
+@media screen and (min-width: 768px){
+    .singleProjet{
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .img-responsive{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1200px;
+        height: 600px;
+    }
+}
