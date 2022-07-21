@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import AllProject from "./pages/AllProject";
+import Project from "./pages/Project";
 
 import "./App.css";
 
@@ -16,7 +17,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Mes_projet" element={<AllProject />} />
         <Route path="/About_Me" />
-        <Route path="/" />
+        <Route path="/projet/:id" element={<Project />} />
       </Routes>
     </BrowserRouter>
   );
