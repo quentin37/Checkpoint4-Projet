@@ -1,0 +1,132 @@
+.form_qb {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form_qb {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form_message_qb{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.button_form{
+  margin-top: 2rem;
+  border-radius: 8px;
+  width: 6rem;
+  height: 3rem;
+  background-color: #1260C4;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  border: none;
+}
+
+.contact_textaera_qb{
+  border-radius: 8px;
+  width: 20rem;
+  height: 10rem;
+}
+
+.field_input{
+  width: 15rem;
+  border-radius: 8px;
+  height: 1.5rem;
+}
+
+.field_label_qb{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.contact_required_qb{
+  margin: 0;
+  font-size: 1rem;
+  color: red;
+}
+.confirmation_message>h3{
+  margin-left: 2.2rem;
+}
+.confirmation_message {
+  border-radius: 0.5rem;
+  width: 15rem;
+  height: 6rem;
+  opacity: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #1260C4;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  animation : appear_disappear 5s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear_disappear {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form_qb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .contact_form_qb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .field_label_qb{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
+  .field_input{
+    width: 18rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+  }
+  .contact_textaera_qb{
+    height: 16rem;
+    width: 21rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+  }
+  .button_form{
+    margin-top: 4.2rem;
+    border-radius: 8px;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+}
