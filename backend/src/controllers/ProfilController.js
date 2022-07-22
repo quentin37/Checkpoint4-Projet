@@ -1,15 +1,11 @@
 const models = require("../models");
 
 class ProfilController {
-  static read = (req, res) => {
+  static browse = (req, res) => {
     models.profil
-      .find(req.params.id)
+      .findAll()
       .then(([rows]) => {
-        if (rows[0] == null) {
-          res.sendStatus(404);
-        } else {
-          res.send(rows[0]);
-        }
+        res.send(rows);
       })
       .catch((err) => {
         console.error(err);

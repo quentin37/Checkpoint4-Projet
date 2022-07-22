@@ -22,7 +22,7 @@ export default function EditProfil() {
 
   const onSubmit = (data) => {
     axios
-      .put(`${import.meta.env.VITE_BACKEND_URL}/Profil`, data)
+      .put(`${import.meta.env.VITE_BACKEND_URL}/profil`, data)
       .then(() => {})
       .catch((err) => console.error(err));
     setSubmitted(true);

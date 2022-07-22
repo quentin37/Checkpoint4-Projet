@@ -3,10 +3,8 @@ const AbstractManager = require("./AbstractManager");
 class ProfilManager extends AbstractManager {
   static table = "profil";
 
-  find(id) {
-    return this.connection.query(`select * from  ${this.table} where id = ?`, [
-      id,
-    ]);
+  findAll() {
+    return this.connection.query(`select * from  ${this.table}`);
   }
 
   update(editProfil) {

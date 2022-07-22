@@ -8,8 +8,8 @@ const {
 
 const router = express.Router();
 
-router.get("profil", ProfilController.read);
-router.put("profil", ProfilController.edit);
+router.get("/profil", ProfilController.browse);
+router.put("/profil", ProfilController.edit);
 
 router.post("/sendEmail", MailController.sendMail);
 
