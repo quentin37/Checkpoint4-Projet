@@ -1,20 +1,18 @@
 const express = require("express");
 
 const {
-  ItemController,
+  ProfilController,
   MailController,
   AllProjectController,
 } = require("./controllers");
 
 const router = express.Router();
 
-router.get("/items", ItemController.browse);
-router.get("/items/:id", ItemController.read);
-router.put("/items/:id", ItemController.edit);
-router.post("/items", ItemController.add);
-router.delete("/items/:id", ItemController.delete);
+router.get("/profil", ProfilController.browse);
+router.put("/profil", ProfilController.edit);
 
 router.post("/sendEmail", MailController.sendMail);
+
 router.post("/Project", AllProjectController.add);
 router.put("/Project", AllProjectController.edit);
 router.delete("/Project/:id", AllProjectController.delete);

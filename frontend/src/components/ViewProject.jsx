@@ -9,7 +9,7 @@ function ViewProject() {
   const { id } = useParams();
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_BACKEND_URL}/project/${id} `)
+      .get(`${import.meta.env.VITE_BACKEND_URL}/Project/${id} `)
       .then((res) => {
         setProjects(res.data);
       })

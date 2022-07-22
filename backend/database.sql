@@ -15,6 +15,26 @@ DROP TABLE IF EXISTS `portfolio`.`project`;
 
 
 -- -----------------------------------------------------
+-- Table `portfolio`.`profil`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `portfolio`.`profil` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `image` VARCHAR(255) NULL,
+  `parcours` TEXT NULL,
+  `description` TEXT NULL,
+  `objectif` TEXT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+INSERT INTO `portfolio`.`profil` (`image`, `parcours`, `description`, `objectif`) 
+VALUES
+('https://i.ibb.co/N63f954/290780516-2958180501140097-3639419242792474478-n.jpg',
+'test',
+'test',
+'test')
+;
+
+-- -----------------------------------------------------
 -- Table `portfolio`.`category`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `portfolio`.`category` (
