@@ -20,9 +20,9 @@ DROP TABLE IF EXISTS `portfolio`.`project`;
 CREATE TABLE IF NOT EXISTS `portfolio`.`profil` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `image` VARCHAR(255) NULL,
-  `name` VARCHAR(45) NULL,
+  `parcours` TEXT NULL,
   `description` TEXT NULL,
-    `objectif` TEXT NULL,
+  `objectif` TEXT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
