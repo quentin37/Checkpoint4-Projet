@@ -6,6 +6,8 @@ import Contact from "./pages/Contact";
 import AllProject from "./pages/AllProject";
 import Project from "./pages/Project";
 import OptionsProject from "./pages/OptionsProject";
+import OptionsProfil from "./pages/OptionsProfil";
+
 import "./App.css";
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
         <Route path="/About_Me" />
         <Route path="/projet/:id" element={<Project />} />
         <Route path="/options/project" element={<OptionsProject />} />
+        <Route path="/options/profil" element={<OptionsProfil />} />
       </Routes>
     </BrowserRouter>
   );
