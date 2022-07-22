@@ -27,11 +27,11 @@ function Nav() {
         </li>
         <li className="navbar_item">
           <Link
-            to="/A_propos"
+            to="/About_Me"
             className="navbar_link"
             onClick={() => setShowLinks(!showlinks)}
           >
-            A propos
+            A propos de moi
           </Link>
         </li>
         <li className="navbar_item">
