@@ -26,6 +26,14 @@ CREATE TABLE IF NOT EXISTS `portfolio`.`profil` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
+INSERT INTO `portfolio`.`profil` (`image`, `parcours`, `description`, `objectif`) 
+VALUES
+('https://i.ibb.co/N63f954/290780516-2958180501140097-3639419242792474478-n.jpg',
+'test',
+'test',
+'test')
+;
+
 -- -----------------------------------------------------
 -- Table `portfolio`.`category`
 -- -----------------------------------------------------
