@@ -1,18 +1,18 @@
-.profilImg{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
+.profilImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.containerImg{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.containerImg {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.describeProfil{
-    padding: 1rem;
+.describeProfil {
+  padding: 1rem;
 }

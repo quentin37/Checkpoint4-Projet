@@ -4,9 +4,9 @@ import ViewProject from "../components/ViewProject";
 function Project() {
   return (
     <section>
-     <Helmet>
-      <title>Portfolio|Projet</title>
-      </Helmet> 
+      <Helmet>
+        <title>Portfolio|Projet</title>
+      </Helmet>
       <ViewProject />
     </section>
   );
